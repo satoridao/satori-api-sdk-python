@@ -139,5 +139,3 @@ time.sleep(5)
 logging.info("closing ws connection")
 my_client.stop()
 ```
-
-#### Proxy
