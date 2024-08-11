@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "satori-api-sdk-python"
+version = "0.1.0"
+description = "Python SDK for Satori API"
+authors = ["Satori DAO <info@satoridao.com>"]
+readme = "README.md"
+repository = "https://github.com/satoridao/satori-api-sdk-python"
+packages = [
+    { include = "satori" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+websocket-client = "^1.6.3"
+pycryptodome = "^3.15.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2"
